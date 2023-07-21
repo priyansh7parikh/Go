@@ -2,7 +2,8 @@ package main
 
 func main() {
 	//To create a new deck
-	cards := newDeck()
+	// cards := newDeckFromFile("my_cards")
+	// cards.print()
 
 	// cards.savetoFile("my_cards")
 	// fmt.Println(cards.toString())
@@ -16,4 +17,8 @@ func main() {
 
 	// greeting := "Hi there!"
 	// fmt.Println([]byte(greeting))
+
+	cards := newDeck()
+	cards.shuffle()
+	cards.print()
 }
